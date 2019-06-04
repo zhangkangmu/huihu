@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/module_circle_top_back_base"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/step_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/module_circle_create_circle_step_one"
+        app:layout_constraintTop_toBottomOf="@id/top" />
+    <include
+        android:id="@+id/step_two"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/module_circle_create_circle_step_two"
+        app:layout_constraintTop_toBottomOf="@id/top" />
+    <include
+        android:id="@+id/step_three"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/module_circle_create_circle_step_three"
+        app:layout_constraintTop_toBottomOf="@id/top" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_next"
+        android:layout_width="48dp"
+        android:background="@drawable/module_circle_shape_circl_blue"
+        app:layout_constraintCircleRadius="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="22.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="48dp" >
+        <ImageView
+            android:id="@+id/iv_next"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/module_circle_right_arrow_32_white_def"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+</android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

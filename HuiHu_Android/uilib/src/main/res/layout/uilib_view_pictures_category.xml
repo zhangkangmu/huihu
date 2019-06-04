@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_one_picture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/bg_no_data_def"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_two_picture_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="2dp"
+        android:visibility="gone"
+        tools:src="@drawable/background_global_blue_full"
+        app:layout_constraintDimensionRatio="h,4:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_two_picture_two"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_two_picture_two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="2dp"
+        android:visibility="gone"
+        tools:src="@drawable/background_global_blue_full"
+        app:layout_constraintDimensionRatio="h,4:3"
+        app:layout_constraintStart_toEndOf="@+id/iv_two_picture_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/iv_more_picture_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="2.66dp"
+        android:visibility="gone"
+        tools:src="@drawable/background_global_blue_full"
+        app:layout_constraintDimensionRatio="h,4:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_more_picture_two"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_more_picture_two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="1.33dp"
+        android:layout_marginEnd="1.33dp"
+        android:visibility="gone"
+        tools:src="@drawable/background_global_blue_full"
+        app:layout_constraintDimensionRatio="h,4:3"
+        app:layout_constraintStart_toEndOf="@+id/iv_more_picture_one"
+        app:layout_constraintEnd_toStartOf="@id/iv_more_picture_three"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_more_picture_three"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="2.66dp"
+        android:visibility="gone"
+        tools:src="@drawable/background_global_blue_full"
+        app:layout_constraintDimensionRatio="h,4:3"
+        app:layout_constraintStart_toEndOf="@+id/iv_more_picture_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    
+    <TextView
+        android:id="@+id/tv_more_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/iv_more_picture_three"
+        app:layout_constraintTop_toTopOf="@id/iv_more_picture_three"
+        app:layout_constraintEnd_toEndOf="@id/iv_more_picture_three"
+        app:layout_constraintBottom_toBottomOf="@id/iv_more_picture_three"/>
+
+</android.support.constraint.ConstraintLayout >

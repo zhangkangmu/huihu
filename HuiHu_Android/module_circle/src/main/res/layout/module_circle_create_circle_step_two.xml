@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cons_report"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_name_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:lineHeight="30sp"
+        android:text="圈子名称"
+        android:textColor="@color/text_black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.huihu.module_circle.createcircle.view.ui.DeleteContent_Edit
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:lineHeight="24sp"
+        android:textColor="@color/text_black"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_circle"
+        android:singleLine="true"
+        app:deleteImg="@drawable/module_circle_clear_32_def"
+        android:backgroundTint="@color/gray_line"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/tv_number"
+        app:layout_constraintTop_toBottomOf="@id/edittext"
+        app:layout_constraintLeft_toLeftOf="@id/edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray_three"
+        android:lineSpacingExtra="6sp"
+        android:text="0"
+        />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/edittext"
+        app:layout_constraintLeft_toRightOf="@id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray_three"
+        android:lineSpacingExtra="6sp"
+        android:text=" /15"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cons_report"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_instruction_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:lineHeight="30sp"
+        android:text="@string/circle_instruction"
+        android:textColor="@color/text_black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/edittext_three"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:hint="请输入10字以上的圈子简介"
+        app:layout_constraintTop_toBottomOf="@id/tv_instruction_circle"
+        android:backgroundTint="@color/gray_line"
+        android:layout_height="60dp"
+        />
+    <TextView
+        android:id="@+id/tv_number_three"
+        app:layout_constraintTop_toBottomOf="@id/edittext_three"
+        app:layout_constraintLeft_toLeftOf="@id/edittext_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/gray_three"
+        android:lineSpacingExtra="6sp"
+        android:text="0/200"
+        />
+
+</android.support.constraint.ConstraintLayout>

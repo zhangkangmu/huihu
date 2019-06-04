@@ -1,0 +1,15 @@
+# 公共View的声明
+
+## 链接View
+类名:SourceView  
+位置:uilib\src\main\java\com\huihu\uilib\customize\source\Source  
+用途:用于显示来源是评论，文章和异常状态的View  
+API:类里面有注释，自己去看吧。  
+额外布局属性:无
+
+## 回答图片显示View
+类名:CategoryPictureView  
+位置:uilib\src\main\java\com\huihu\uilib\customize\
+用途:用于显示一图，二图，三图和多图的情况。多图显示为第三张图片加蒙层和剩余图片数量  
+API:类里面有注释，自己去看吧。  
+额外布局属性:无 

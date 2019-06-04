@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/module_notification_panel_user_info"/>
+    
+    <ImageView
+        android:id="@+id/iv_like_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/module_notification_icon_like"
+        app:layout_constraintStart_toStartOf="@id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"/>
+    
+    <com.huihu.uilib.customize.source.SourceView
+        android:id="@+id/source"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:mode="articlePictureText"
+        app:layout_constraintStart_toStartOf="@id/tv_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_like_icon"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/iv_user_head"
+        app:layout_constraintEnd_toEndOf="@id/source"
+        app:layout_constraintTop_toBottomOf="@id/source"/>
+
+</android.support.constraint.ConstraintLayout>

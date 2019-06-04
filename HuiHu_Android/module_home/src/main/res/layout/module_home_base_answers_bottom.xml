@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:background="@color/white">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_agree"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_agree"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/module_home_icon_like_48_def"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/agree_count"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:lineHeight="18sp"
+            android:text="3996.1w"
+            android:textSize="12sp"
+            android:textColor="@color/module_home_selector_answerdetail_bottom"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_agree" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_down"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toRightOf="@id/cons_agree"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_download"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/module_home_icon_down_48_def"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/download_count"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:lineHeight="18sp"
+            android:text="3996.1w"
+            android:textColor="@color/module_home_selector_answerdetail_bottom"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_download" />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_collect"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toLeftOf="@id/cons_comment"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_collect"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/module_home_icon_collect_48_def"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+      <TextView
+        android:id="@+id/collect_count"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:gravity="center"
+        android:lineHeight="18sp"
+        android:text="3996.1w"
+        android:textSize="12sp"
+          android:textColor="@color/module_home_selector_answerdetail_bottom"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_collect" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_comment"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_comment"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/module_home_icon_comment_48_def"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:lineHeight="18sp"
+            android:text="3996.1w"
+            android:textSize="12sp"
+            android:textColor="@color/module_home_selector_answerdetail_bottom"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_comment" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

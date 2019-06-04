@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/module_mine_icon_back_black"/>
+
+        <TextView
+            android:id="@+id/tv_base"
+            android:layout_width="375dp"
+            android:gravity="center_vertical"
+            android:layout_height="56dp"
+            android:text="@string/module_mine_setting"
+            android:textColor="@color/gray_one"
+            android:textSize="32sp"/>
+
+</LinearLayout>

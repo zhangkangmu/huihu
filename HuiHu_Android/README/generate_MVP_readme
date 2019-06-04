@@ -1,0 +1,9 @@
+生成MVP文件的MVP脚本使用方式
+在Terminal面板上
+执行generate_MVP 模块名 包名 场景名 -A/F [-M]
+模块名 包名 场景名 -A/-F/-V必填
+-A生成Activity,-F生成Fragment,-V生成View
+-M选填，当有-M时，MVP生成代码会在 包/ 下生成，没有-M时，MVP生成代码会在 包名/场景名 下生成
+
+如generate_MVP module_name com.fxchat.geniusrank AccountManager -A
+如generate_MVP module_name com.fxchat.geniusrank.userpage Discuss -F -M

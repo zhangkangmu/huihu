@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_circle_white">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/module_circle_panel_toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_manager_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:lineHeight="24sp"
+        android:text="管理圈子"
+        android:textColor="@color/global_blue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fadingEdge="none"
+            app:elevation="0dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <ImageView
+                    android:id="@+id/iv_category"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="20dp"
+                    android:ellipsize="end"
+                    android:lineHeight="27dp"
+                    android:lines="2"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_category"
+                    app:layout_constraintTop_toTopOf="@id/iv_category"
+                    tools:text="外汇市场大牛聚集地欢迎各位加入"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_num_Avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toEndOf="@id/iv_category"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+                    <ImageView
+                        android:id="@+id/iv_other"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/module_circle_icon_more_avatar"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_category_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="7sp"
+                    android:textColor="@color/gray_three"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_category"
+                    app:layout_constraintStart_toStartOf="@id/tv_title"
+                    tools:text="623.9k 关注"/>
+
+                <com.huihu.uilib.customize.CornerImageView
+                    android:id="@+id/cv_invite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/module_circle_shape_litterwhite"
+                    android:padding="8dp"
+                    android:src="@drawable/module_circle_icon_invite"
+
+                    app:layout_constraintBottom_toBottomOf="@id/iv_category"
+                    app:layout_constraintEnd_toStartOf="@id/tv_do"/>
+
+                <TextView
+                    android:id="@+id/tv_do"
+                    android:layout_width="77dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/background_global_blue_full"
+                    android:gravity="center"
+                    android:text="加入"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_category"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:paddingStart="10dp"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/iv_create_discuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/global_blue"
+        android:scaleType="center"
+        android:src="@drawable/module_circle_icon_edit_introduction"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</android.support.constraint.ConstraintLayout>

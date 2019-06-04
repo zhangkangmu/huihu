@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region 全局-->
+    <color name="global_blue">#1777e6</color>
+    <color name="uilib_dark_white">#eaeaea</color>
+    <color name="uilib_light_gray">#b8b8b8</color>
+    <color name="virtual_blue">#9fc5ef</color>
+    <color name="gray_one">#333333</color>
+    <color name="gray_two">#666666</color>
+    <color name="gray_three">#999999</color>
+    <color name="commonlib_red_warning">#f35656</color>
+    <color name="line">#33000000</color>
+    <color name="white">#ffffff</color>
+    <color name="text_black">#333333</color>
+    <color name="text_gray">#999999</color>
+    <color name="gray_line">#33000000</color>
+    <color name="comresourcelib_background_look_picture_actionbar">#cc000000</color>
+    <color name="module_mine_community_bg">#f0f3f7</color>
+    <color name="uilib_bg_search">#f2f2f2</color>
+    <!--endregion 全局-->
+
+    <color name="uilib_image_crop_circle">#ffffff</color>
+    <color name="uilib_image_crop_rect">#ffffff</color>
+
+    <color name="uilib_source_background">#f7f7f7</color>
+</resources>

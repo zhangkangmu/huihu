@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">uiLib</string>
+    <string name="uilib_no_data_tip">此处空空如也~</string>
+    <string name="uilib_net_fail_tip">网络正在开小差</string>
+    <!--region 相册-->
+    <string name="comresourcelib_album">相册</string>
+    <string name="comresourcelib_album_cancel">取消</string>
+    <string name="comresourcelib_album_preview">预览</string>
+    <string name="comresourcelib_album_complete">完成</string>
+    <string name="comresourcelib_album_complete_number">完成(%d)</string>
+    <string name="comresourcelib_album_select_limit">最多选择%d张哦~</string>
+    <!--endregion-->
+
+    <string name="uilib_http_request_fail">服务器繁忙</string>
+
+    <!--region 时间显示的字符串-->
+    <string name="uilib_in_one_hour">1小时内</string>
+    <string name="uilib_before_few_hour">%d小时前</string>
+    <string name="uilib_before_few_day">%d天前</string>
+    <string name="uilib_before_few_month">%d月前</string>
+    <string name="uilib_before_few_year">%d年前</string>
+    <!--endregion-->
+
+    <!--region 裁剪图片-->
+    <string name="uilib_cancel">取消</string>
+    <string name="uilib_save_image">保存图片</string>
+    <string name="uilib_preparing_card">正在准备</string>
+    <string name="uilib_no_storage_card">无内存卡</string>
+    <string name="uilib_not_enough_space">空间不足</string>
+    <string name="uilib_text_Retry">点击刷新</string>
+    <!--endregion-->
+
+    <string name="uilib_link_delete">该评论已删除</string>
+    <string name="uilib_link_violationed">该评论已下架</string>
+    <!--region 分享dialog-->
+    <string name="uilib_share_to">分享至</string>
+    <string name="uilib_share_to_moment">朋友圈</string>
+    <string name="uilib_share_to_wechat">微信好友</string>
+    <string name="uilib_share_to_weibo">新浪微博</string>
+    <string name="uilib_share_to_qq">QQ好友</string>
+    <string name="uilib_share_to_collect">收藏</string>
+    <string name="uilib_share_to_report">举报</string>
+    <string name="uilib_share_to_copy_link">复制链接</string>
+    <string name="uilib_share_to_delete_question">删除提问</string>
+    <string name="uilib_share_to_delete_discuss">删除讨论</string>
+    <string name="uilib_share_to_delete_answer">删除回答</string>
+    <string name="uilib_share_to_appeal_content">申诉内容</string>
+    <string name="uilib_share_to_banned">禁言</string>
+    <string name="uilib_share_to_obtained">下架讨论</string>
+    <!--endregion-->
+
+    <!--region 投诉-->
+    <string name="uilib_complaint_title">举报</string>
+    <string name="uilib_complaint_submit">提交</string>
+    <string name="uilib_complaint_words_limit">至少10个字符至多200字符</string>
+    <string name="uilib_complaint_success">小汇马上处理你的举报</string>
+    <string name="uilib_complaint_error">举报失败，请稍后再试</string>
+    <string name="uilib_complaint_net_no_work">网络异常</string>
+    <!--endregion-->
+
+    <!--region 评论编辑框-->
+    <string name="uilib_comment_write_in">请输入内容</string>
+    <string name="uilib_comment_iamge_limite">图片不能超过9张</string>
+    <string name="uilib_comment_to">评论给</string>
+    <string name="uilib_comment_write">写下你的评论...</string>
+    <string name="uilib_comment_search">搜索</string>
+    <string name="uilib_comment_publish">发布</string>
+    <!--endregion-->
+
+
+    <string name="uilib_create_circle">创建圈子</string>
+    <string name="uilib_hint_search">搜索外汇知识</string>
+    <string name="uilib_text_nomore">没有更多内容</string>
+
+</resources>

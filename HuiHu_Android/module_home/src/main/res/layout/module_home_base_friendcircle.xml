@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@drawable/module_home_shape_community_bg"
+        android:paddingRight="10dp"
+        android:paddingLeft="2dp"
+        android:layout_height="20dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_friendcircle"
+            android:src="@drawable/module_home_icon_community_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="16.5dp"
+            android:layout_height="16.5dp" />
+        <TextView
+            android:id="@+id/tv_communityName"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:lineHeight="18sp"
+            app:layout_constraintLeft_toRightOf="@id/iv_friendcircle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/global_blue"
+            android:lineSpacingExtra="6sp"
+            android:singleLine="true"
+            android:maxLength="12"
+            android:text="圈子名称，单行显示"
+            />
+    </android.support.constraint.ConstraintLayout>

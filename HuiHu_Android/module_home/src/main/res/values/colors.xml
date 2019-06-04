@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="module_home_community_bg">#f0f3f7</color>
+    <color name="module_home_text_black">#333333</color>
+    <color name="module_home_blue">#1777e6</color>
+    <color name="module_home_gray_three">#999999</color>
+    <color name="module_home_search_bg">#f2f2f2</color>
+    <color name="module_home_search_selected_bg">#f3f3f3</color>
+    <color name="module_home_unclickable">#9fc5ef</color>
+    <color name="module_home_line">#33000000</color>
+    <color name="module_home_white">#ffffff</color>
+    <color name="module_home_bg_category_tag">#f7f7f7</color>
+    <color name="module_home_text_added">#b6b6b6</color>
+    <color name="module_home_text_gray_6">#666666</color>
+    <color name="module_home_warning">#f35656</color>
+    <color name="module_home_review">#f9bb00</color>
+
+    <!--region 按钮的颜色-->
+    <color name="module_home_style_two_normal">#f0f3f7</color>
+    <color name="module_home_style_two_press">#f4f6f9</color>
+    <color name="module_home_style_one_press">#589ded</color>
+    <color name="module_home_bg_unable">#f3f3f3</color>
+    <color name="module_home_text_unable">#b8b8b8</color>
+    <!--endregion-->
+</resources>

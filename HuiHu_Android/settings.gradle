@@ -1,0 +1,2 @@
+include ':app', ':module_maincontainer', ':commonlib', ':uilib', ':module_home', ':module_notification', ':module_mine', ':module_push',
+        ':module_circle', 'Permissionlibrary', 'localeslib','richeditor','module_push'

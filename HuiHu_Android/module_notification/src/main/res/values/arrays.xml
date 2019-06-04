@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="module_notification_fans_indicator">
+        <item>关注我的</item>
+        <item>我的关注</item>
+    </string-array>
+
+    <string-array name="module_notification_reply_indicator">
+        <item>我提问的</item>
+        <item>我关注的</item>
+    </string-array>
+
+    <string-array name="module_notification_push_setting_type">
+        <item>回答</item>
+        <item>关注</item>
+        <item>评论</item>
+        <item>回答邀请</item>
+        <item>圈子邀请</item>
+        <item>系统消息</item>
+        <item>系统通知</item>
+    </string-array>
+</resources>

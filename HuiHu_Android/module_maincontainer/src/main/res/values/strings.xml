@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">module_maincontainer</string>
+
+    <string name="module_maincontainer_home">首页</string>
+    <string name="module_maincontainer_circle">圈子</string>
+    <string name="module_maincontainer_notification">消息</string>
+    <string name="module_maincontainer_mine">我的</string>
+</resources>

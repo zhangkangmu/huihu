@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="16sp"
+        android:text="TA人主页"
+        android:textColor="@color/gray_one"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_fxchat_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:lineSpacingExtra="7sp"
+        android:text="汇聊号: 627816381"
+        android:textColor="@color/gray_one"
+        android:textSize="14sp"
+        android:lineHeight="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name"/>
+
+    <TextView
+        android:id="@+id/tv_fxchat_guide"
+        android:drawableLeft="@drawable/module_mine_ic_label_fxchat_32"
+        android:drawablePadding="4dp"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/module_mine_icon_right_arrow_32_gray"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="7sp"
+        android:text="汇聊"
+        android:textColor="@color/gray_one"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_fxchat_key"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fxchat_key"/>
+
+    <include
+        android:layout_marginTop="12dp"
+        layout="@layout/module_mine_signature"
+        android:id="@+id/constrainLayout_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_line"/>
+
+    <TextView
+        android:id="@+id/tv_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="6sp"
+        android:text="填写个性签名更容易获得别人关注哦~"
+        android:textColor="@color/gray_two"
+        android:textSize="12sp"
+        android:lineHeight="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constrainLayout_sign"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/cl_attention"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_signature">
+
+        <TextView
+            android:id="@+id/tv_praise_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10sp"
+            android:text="369.3k"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/gray_one"
+            android:lineHeight="30sp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_praise_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:lineSpacingExtra="7sp"
+            android:text="获赞"
+            android:textColor="@color/gray_one"
+            android:textSize="14sp"
+            android:lineHeight="21sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_praise_value"
+            app:layout_constraintStart_toEndOf="@id/tv_praise_value"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toRightOf="@id/cl_praise"
+        app:layout_constraintTop_toBottomOf="@id/tv_signature">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/tv_attention_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10sp"
+            android:text="363.3w"
+            android:lineHeight="30sp"
+            android:textColor="@color/gray_one"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_attention_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:lineSpacingExtra="7sp"
+            android:text="关注"
+            android:textColor="@color/gray_one"
+            android:textSize="14sp"
+            android:lineHeight="21sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_attention_value"
+            app:layout_constraintStart_toEndOf="@id/tv_attention_value"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toRightOf="@id/cl_attention"
+        app:layout_constraintTop_toBottomOf="@id/tv_signature">
+
+        <TextView
+            android:id="@+id/tv_fans_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10sp"
+            android:text="693.6w"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/gray_one"
+            android:lineHeight="30sp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_fans_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:lineSpacingExtra="7sp"
+            android:text="粉丝"
+            android:textColor="@color/gray_one"
+            android:textSize="14sp"
+            android:lineHeight="21sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_fans_value"
+            app:layout_constraintStart_toEndOf="@id/tv_fans_value"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_put_follows"
+        android:layout_width="160dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_praise"
+        android:background="@drawable/module_mine_shape_blue"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/others_put_follows"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="关注"
+            app:layout_constraintRight_toRightOf="parent"
+            android:drawableLeft="@drawable/module_mine_icon_follow_40"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:lineHeight="24sp"
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/iv_enlarge"
+        android:layout_marginLeft="8dp"
+        android:background="@color/module_mine_community_bg"
+        app:layout_constraintTop_toTopOf="@id/cons_put_follows"
+        app:layout_constraintLeft_toRightOf="@id/cons_put_follows"
+        android:src="@drawable/module_mine_enlarge_2_32_blue_def"
+        android:scaleType="center"
+        android:layout_width="44dp"
+        android:layout_height="44dp" />
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_favorites"/>
+
+</android.support.constraint.ConstraintLayout>

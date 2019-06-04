@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">module_mine</string>
+
+    <!--region 设置-->
+    <string name="module_mine_setting">设置</string>
+    <string name="module_mine_account">账号</string>
+    <string name="module_mine_edit_info">编辑个人资料</string>
+    <string name="module_mine_password_setting">密码设置</string>
+    <string name="module_mine_bind_social">绑定微信、QQ、微博</string>
+    <string name="module_mine_message_setting">消息设置</string>
+    <string name="module_mine_service">服务</string>
+    <string name="module_mine_feedback">意见反馈</string>
+    <string name="module_mine_check_update">检查更新</string>
+    <string name="module_mine_user_protocol">用户服务协议</string>
+    <string name="module_mine_about_us">关于我们</string>
+    <string name="module_mine_exit">退出登录</string>
+    <string name="module_mine_save">保存</string>
+    <!--endregion-->
+
+    <!--region 登录注册-->
+    <string name="module_mine_login_by_psw">密码登录</string>
+    <string name="module_mine_login_huihu">登录汇乎</string>
+    <string name="module_mine_unregister_hint">未注册手机验证后自动登录</string>
+    <string name="module_mine_input_phone">输入手机号</string>
+    <string name="module_mine_input_phone_or_fxchat">输入手机号/汇聊号</string>
+    <string name="module_mine_title_verification">请输入验证码</string>
+    <string name="module_mine_user_agreement">我已阅读并同意用户协议</string>
+    <string name="module_mine_reacquire_code">重新获取验证码</string>
+    <string name="module_mine_input_account_psw">请输入帐号和密码</string>
+    <string name="module_mine_forget_psw">请输入帐号和密码，或您是否忘记了密码？</string>
+    <string name="module_mine_input_psw">输入密码</string>
+    <string name="module_mine_hint_prevent_leakage">请注意周边环境，以防密码泄露</string>
+    <string name="module_mine_hint_reset_psw">请输入6位以上新密码</string>
+    <string name="module_mine_title_agreement">“汇乎”用户服务协议</string>
+    <string name="module_mine_title_select_country">请选择手机号\n国家/区域</string>
+    <string name="module_mine_hint_send">我们已发送验证码至手机号为 %s 手机</string>
+    <string name="module_mine_title_set_new_psw">请设置新密码</string>
+    <string name="module_mine_title_approved">通过验证，找回密码</string>
+    <!--endregion-->
+
+    <!--region 意见反馈-->
+    <string name="module_mine_feedback_title">意见反馈</string>
+    <string name="module_mine_feedback_input_hint">请填写意见和建议（至少10个字符）</string>
+    <string name="module_mine_limit_tip">%d/200</string>
+    <string name="module_mine_feedback_phone_tip">你的联系方式</string>
+    <string name="module_mine_commit">提交</string>
+    <string name="module_mine_content_not_null">请输入反馈内容或选择一张图片</string>
+    <!--endregion-->
+
+    <!--region 编辑个人资料-->
+    <string name="module_mine_picker_title_sex">性别</string>
+    <string name="module_mine_picker_title_edu">学历</string>
+    <string name="module_mine_picker_title_industry">行业</string>
+    <string name="module_mine_title_bind_phone">绑定新手机号</string>
+    <string name="module_mine_hint_bind_phone">输入需要更换的手机号</string>
+    <string name="module_mine_title_confirm_phone">请输入绑定的手机号</string>
+    <string name="module_mine_hint_confirm_phone">输入当前绑定的手机号，并通过短信验证</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="authentiction">认证信息</string>
+    <string name="attentioned">已关注</string>
+    <!--endregion-->
+</resources>

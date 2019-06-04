@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">module_home</string>
+
+    <string name="module_home_popular">热门</string>
+    <string name="module_home_search_hint">搜索外汇知识</string>
+    <string name="module_home_hint_search_friend">搜索好友</string>
+    <string name="module_home_search_question">提问</string>
+    <string name="module_home_hint_rich_editor">请输入问题并以问号结尾</string>
+    <string name="module_home_hint_discuss">请输入需要讨论的标题</string>
+    <string name="module_home_hint_richeditor">请完善讨论详情（必填）</string>
+    <string name="module_home_hint_write_answer">一千个人眼里，有一千个哈姆雷特</string>
+    <string name="module_home_title_question">提问</string>
+    <string name="module_home_toolbar_draft">草稿箱</string>
+    <string name="module_home_toolbar_next">下一步</string>
+    <string name="module_home_hint_question_description">问题描述(选填)</string>
+    <string name="module_home_text_add_description">添加问题描述</string>
+    <string name="module_home_text_release">发布</string>
+    <string name="module_home_title_initiate_discuss">发起讨论</string>
+    <string name="module_home_text_add_category">添加分类</string>
+    <string name="module_home_hint_add_category">至少添加一个分类</string>
+    <string name="module_home_count_category">%d/5</string>
+    <string name="module_home_hint_search_category">搜索分类</string>
+    <string name="module_home_text_add">添加</string>
+    <string name="module_home_text_added">已添加</string>
+    <string name="module_home_text_expand">展开详情</string>
+    <string name="module_home_text_attention_question">关注问题</string>
+    <string name="module_home_text_attentioned_question">已关注问题</string>
+    <string name="module_home_text_violation">违规下架</string>
+    <string name="module_home_text_review">重新审核中</string>
+    <string name="module_home_text_Invitation_answer">邀请回答</string>
+    <string name="module_home_text_invitation_answer_question">回答问题</string>
+    <string name="module_home_text_answer">回答</string>
+    <string name="module_home_text_my_answer">我的回答</string>
+    <string name="module_home_text_comment">评论</string>
+    <string name="module_home_text_approval">赞同</string>
+    <string name="module_home_text_attention_person">关注Ta</string>
+    <string name="module_home_text_attention">关注</string>
+    <string name="module_home_text_attentioned">已关注</string>
+    <string name="module_home_text_answer_count">%d回答</string>
+    <string name="module_home_text_edit_time">%s回答</string>
+    <string name="module_home_text_attention_count">%d 关注</string>
+    <string name="module_home_text_withparam_approval">%s 赞同</string>
+    <string name="module_home_text_withparam_comment">%s 评论</string>
+    <string name="module_home_text_withparam_question_naem">%s · %s提问</string>
+    <string name="module_home_text_text_violation">你的提问被管理人员定为违规请修改问题后重新发布审核！</string>
+    <string name="module_home_text_review_edit">重新编辑</string>
+
+    <!--region 邀请回答-->
+    <string name="module_home_title_invite_answer">邀请回答</string>
+    <string name="module_home_text_invite">邀请</string>
+    <!--endregion-->
+
+    <!--region 草稿-->
+    <string name="module_home_title_draft">草稿</string>
+    <!--endregion-->
+
+    <!--评论模块-->
+    <string name="module_home_comment_rely">%s 条回复 </string>
+    <string name="agree">赞同</string>
+    <string name="comment">评论</string>
+</resources>

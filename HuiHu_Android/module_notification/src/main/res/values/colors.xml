@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="module_notification_followed_text">#b6b6b6</color>
+    <color name="module_notification_followed_bg">#f3f3f3</color>
+    <color name="module_notification_invite_old_state">#b8b8b8</color>
+</resources>

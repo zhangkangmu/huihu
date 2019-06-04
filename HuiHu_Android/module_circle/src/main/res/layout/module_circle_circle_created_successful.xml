@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv_complete"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:text="@string/complete"
+    android:paddingRight="20dp"
+    android:textSize="16sp"
+    android:paddingLeft="20dp"
+    android:lineHeight="24sp"
+    android:gravity="center_vertical"
+    android:textColor="@color/global_blue"
+    android:layout_width="wrap_content"
+    android:layout_height="44dp" />
+    <TextView
+        android:id="@+id/tv_create_success"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_complete"
+        android:text="@string/create_successful"
+        android:textSize="32sp"
+        android:lineHeight="48sp"
+        android:textColor="@color/text_black"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp" />
+    <TextView
+        android:id="@+id/tv_your_circle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_create_success"
+        android:text="@string/your_circle"
+        android:textSize="20sp"
+        android:lineHeight="30sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_black"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_your_circle"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+        <com.huihu.uilib.customize.CornerImageView
+            android:id="@+id/civ_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_width="112dp"
+            app:corner_radius="4dp"
+            android:scaleType="centerCrop"
+            android:layout_height="112dp" />
+
+        <TextView
+            android:id="@+id/tv_circle_name"
+            app:layout_constraintLeft_toRightOf="@id/civ_circle"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:lineHeight="27sp"
+            android:layout_marginRight="20dp"
+            android:maxLines="2"
+            app:layout_constraintTop_toTopOf="@id/civ_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_invite"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="7sp"
+            android:background="@drawable/module_circle_shape_blue"
+            android:gravity="center"
+            android:text="@string/invite"
+            android:layout_width="77dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/civ_circle"
+            android:layout_marginRight="20dp"
+            android:layout_height="32dp" />
+        <TextView
+            android:id="@+id/tv_number"
+            app:layout_constraintBottom_toBottomOf="@id/civ_circle"
+            android:textSize="12sp"
+            android:textColor="@color/gray_three"
+            android:lineHeight="18sp"
+            android:lineSpacingExtra="6sp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toRightOf="@id/civ_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.huihu.uilib.customize.RoundImageView
+            android:id="@+id/riv_circle"
+            app:layout_constraintBottom_toTopOf="@id/tv_number"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintLeft_toRightOf="@id/civ_circle"
+            android:layout_marginLeft="16dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </android.support.constraint.ConstraintLayout>
+    
+
+</android.support.constraint.ConstraintLayout>

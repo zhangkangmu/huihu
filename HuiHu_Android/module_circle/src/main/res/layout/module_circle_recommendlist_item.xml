@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_disscution"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="wrap_content">
+        <com.huihu.uilib.customize.RoundImageView
+            android:id="@+id/rv_user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:src="@drawable/uilib_bg_avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_community"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lineSpacingExtra="8sp"
+            android:text="张宇提问 ·一分钟前提问"
+            android:textColor="@color/gray_three"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/rv_user"
+            app:layout_constraintTop_toTopOf="@id/rv_user" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/module_circle_ic_icon_close_32_def"
+        android:layout_marginRight="20.5dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="44dp"
+        android:gravity="start"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="语雀是一款优雅高效的在线，文档编辑与协同工具， 让每个企业轻松拥?"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <GridView
+        android:id="@+id/gridview"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginTop="20dp"
+        android:verticalSpacing="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content">
+    </GridView>
+    <include layout="@layout/module_circle_discuss_bottom"
+        android:id="@+id/rl_home_answer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"/>
+
+    <include layout="@layout/module_circle_item_discuss_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rl_home_answer"/>
+</android.support.constraint.ConstraintLayout>

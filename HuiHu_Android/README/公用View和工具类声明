@@ -1,0 +1,13 @@
+1.带圆角图片请使用CornerImageView
+2.圆形头像 RoundImageView
+3.下拉刷新和上拉加载使用smartRefreshLayout
+4.时间格式统一使用TimeUtils(xxx前，一小时前，几天前，几周前)
+5.计数规则使用CountUtils(10k,19w这种)
+6.使用Glide加载图片使用Imgtools(目前只有一个方法，需要更多自行补充)
+7.非特殊场景下，popwindow使用HuihuMenu
+8.分享的底部弹窗  HHShareDialog
+9.上拉加载的footer统一使用MaterialFooter，还没换的注意更换
+10.Huihupopwindow
+final Huihupopwindow floatMenu = new Huihupopwindow(this, view);//这一行要在点击事件外部
+Huihupopwindow.items("选项strings1","选项strings2");
+floatMenu.show();

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_comment_more"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="100dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:lineHeight="24sp"
+        android:textColor="@color/text_gray"
+        android:text="没有更多内容" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#33000000" />
+
+</LinearLayout>

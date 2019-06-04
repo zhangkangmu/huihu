@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="24dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:id="@+id/tv_count_approval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1002 赞同"
+        android:textColor="@color/module_home_gray_three"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_count_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/gray_three"
+        android:textSize="12sp"
+        tools:text="38 评论"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_count_approval"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/module_home_icon_share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_indicator">
+        <item>热榜</item>
+        <item>热门</item>
+        <item>推荐</item>
+    </string-array>
+    <color name="global_blue">#1777e6</color>
+    <color name="gray_one">#333333</color>
+    <color name="gray_three">#999999</color>
+    <color name="gray_two">#666666</color>
+    <color name="white">#ffffff</color>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_32">32sp</dimen>
+    <string name="app_name">commonResourceLib</string>
+    <string name="circle">圈子</string>
+    <string name="home">首页</string>
+    <string name="hot">热门</string>
+    <string name="hot_list">热榜</string>
+    <string name="mine">我的</string>
+    <string name="notification">通知</string>
+    <string name="recommend">推荐</string>
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_toolbar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:src="@drawable/module_uilib_icon_back"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tv_toolbar_title"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_black"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="invisible"
+        tools:text="外汇市场大牛聚集地欢迎各位..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_toolbar_back"
+        app:layout_constraintBottom_toBottomOf="@id/iv_toolbar_back"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_toolbar_back"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fadingEdge="none"
+            app:elevation="0dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll">
+
+                <ImageView
+                    android:id="@+id/iv_category"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="14.5dp"
+                    android:layout_marginBottom="32dp"
+                    tools:src="@drawable/background_global_blue_full"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_black"
+                    android:layout_marginStart="22.5dp"
+                    android:layout_marginEnd="20dp"
+                    tools:text="外汇市场大牛聚集地欢迎各位加入"
+                    app:layout_constraintTop_toTopOf="@id/iv_category"
+                    app:layout_constraintStart_toEndOf="@id/iv_category"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_category_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_three"
+                    android:lineSpacingExtra="7sp"
+                    tools:text="623.9k 关注"
+                    app:layout_constraintStart_toStartOf="@id/tv_category"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_category"/>
+
+                <TextView
+                    android:id="@+id/tv_do"
+                    android:textSize="14sp"
+                    android:layout_width="77dp"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/background_global_blue_full"
+                    android:layout_marginEnd="20dp"
+                    android:text="关注"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_category"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:background="@color/line"
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_category_answer"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="1.4k问答"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_sort_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:drawableRight="@drawable/module_home_icon_arrow_gray"
+                    android:drawablePadding="4dp"
+                    android:padding="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/module_home_popular"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_category_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/module_home_item_category_answer"/>
+            </FrameLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>
+

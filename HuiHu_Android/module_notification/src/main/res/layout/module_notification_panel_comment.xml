@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/module_notification_panel_user_info"/>
+
+    <TextView
+        android:id="@+id/tv_other_comment_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_black"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:lineSpacingExtra="8sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        tools:text="语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业轻松拥有文档中心阿里巴巴集团内部使用多年，众多。"
+        app:layout_constraintStart_toStartOf="@id/tv_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"/>
+
+
+    <com.huihu.uilib.customize.source.SourceView
+        android:id="@+id/source_other_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@id/tv_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_other_comment_single_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="287dp"
+        android:maxHeight="163.5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        tools:visibility="visible"
+        tools:src="@drawable/bg_no_data_def"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/tv_other_comment_content"
+        app:layout_constraintStart_toStartOf="@id/tv_other_comment_content"
+        app:layout_constraintEnd_toEndOf="@id/tv_other_comment_content"
+        app:layout_constraintBottom_toTopOf="@id/source_other_comment"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_other_comment_more_picture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_other_comment_content"
+        app:layout_constraintStart_toStartOf="@id/tv_other_comment_content"
+        app:layout_constraintEnd_toEndOf="@id/tv_other_comment_content"
+        app:layout_constraintBottom_toTopOf="@id/source_other_comment"
+        tools:visibility="gone"
+        tools:layoutManager="GridLayoutManager"
+        tools:listitem="@layout/uilib_item_more_picture"
+        tools:spanCount="3"
+        tools:itemCount="9"/>
+
+</merge>

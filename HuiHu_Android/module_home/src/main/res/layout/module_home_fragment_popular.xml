@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:clipChildren="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.huihu.module_home.home.view.ui.HuihuLoopingViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:clipChildren="false"/>
+            <com.huihu.module_home.home.view.ui.HuihuBannerIndicator
+                android:id="@+id/indicator_line"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="90dp"
+                app:vpi_default_color="@color/gray_three"
+                app:vpi_selected_color="@color/white"
+                app:vpi_distance="14dp"
+                app:vpi_distanceType="BY_DISTANCE"
+                app:vpi_indicatorType="CIRCLE_LINE"
+                app:vpi_length="14dp"
+                app:vpi_radius="3dp" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_below="@id/viewpager"
+                android:layout_width="match_parent"
+                app:fastScrollEnabled="false"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_question_title"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        android:lineSpacingExtra="9sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="16dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="语雀是一款优雅高效的在线，文档编辑与协同工具， 让每个企业轻松拥?" />
+
+    <include
+        layout="@layout/module_notification_item_new_reply"/>
+</LinearLayout>

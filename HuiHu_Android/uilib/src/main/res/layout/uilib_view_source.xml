@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/uilib_source_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_article"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_source_article"
+            android:layout_width="56dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            tools:src="@drawable/background_global_blue_full"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_source_article"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="@color/text_black"
+            android:lineSpacingExtra="7sp"
+            android:layout_margin="8dp"
+            tools:text="Eneering意为蚁程践由蚂蚁程践由蚂蚁金服集团每年举办 1-2 阿萨德sa撒啊次Eneering意为蚁程践由蚂蚁程践由蚂蚁金服集团每年举办"
+            app:layout_constraintStart_toEndOf="@id/iv_source_article"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_user_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        
+        <com.huihu.uilib.customize.RoundImageView
+            android:id="@+id/iv_source_user_head"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            tools:src="@drawable/bg_no_data_def"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_source_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/text_black"
+            tools:text="王大表哥"
+            app:layout_constraintTop_toTopOf="@id/iv_source_user_head"
+            app:layout_constraintBottom_toBottomOf="@id/iv_source_user_head"
+            app:layout_constraintStart_toEndOf="@id/iv_source_user_head"/>
+
+        <TextView
+            android:id="@+id/tv_source_comment_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="2dp"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:textColor="@color/text_black"
+            android:lineSpacingExtra="8sp"
+            tools:text="Ant Design是一个服务于i.企业级产品的设计体系，基于确定和自然的设计价值.观和模块化的解决方案，让设计者专注地。企业级产品的设计体系，基于确定和自然的设计价值.观和模块化的解决方案企业级产品的设计体系，基于确定和自然"
+            app:layout_constraintStart_toStartOf="@id/iv_source_user_head"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_source_user_head"/>
+
+        <ImageView
+            android:id="@+id/iv_source_single_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="255dp"
+            android:maxHeight="143dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitStart"
+            tools:src="@drawable/bg_no_data_def"
+            tools:visibility="gone"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_source_comment_content"
+            app:layout_constraintStart_toStartOf="@id/tv_source_comment_content"
+            app:layout_constraintEnd_toEndOf="@id/tv_source_comment_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_source_more_picture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_source_comment_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layoutManager="GridLayoutManager"
+            tools:listitem="@layout/uilib_item_more_picture"
+            tools:spanCount="3"
+            tools:itemCount="9"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_source_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="21dp"
+            tools:src="@drawable/uilib_icon_deleted_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_source_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/gray_three"
+            android:layout_marginStart="4dp"
+            tools:text="该评论被删除"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_source_limit"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

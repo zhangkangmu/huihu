@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/module_notification_panel_user_info"/>
+
+    <TextView
+        android:id="@+id/tv_who_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_black"
+        android:layout_marginTop="4dp"
+        tools:text="王思聪邀请你回答问题"
+        app:layout_constraintStart_toStartOf="@id/tv_time"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"/>
+
+    <TextView
+        android:id="@+id/tv_problem_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_black"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="8sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        tools:text="语雀是一款优雅高效的在线文档编辑与协同工具，让每个企业轻松拥有文档中心阿里巴巴集团内部使用多年，众多档中心阿里巴巴集团档中心阿里巴巴集团"
+        app:layout_constraintStart_toStartOf="@id/tv_who_invite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_who_invite"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_marginTop="15.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_problem_description"/>
+
+</android.support.constraint.ConstraintLayout>

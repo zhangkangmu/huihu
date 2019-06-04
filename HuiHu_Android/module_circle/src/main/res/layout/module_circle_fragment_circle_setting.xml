@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/top"
+        layout="@layout/module_circle_top_back_base"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_manager_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/global_blue"
+        android:lineHeight="24sp"
+        android:textSize="16sp"
+        android:text="成员管理"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/global_blue"
+        android:lineHeight="24sp"
+        android:textSize="16sp"
+        android:text="保存"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/ic_edit_introduction"
+        layout="@layout/module_circle_circle_introduction_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top" />
+
+    <include
+        android:id="@+id/step_one"
+        layout="@layout/module_circle_circle_setting_get_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top" />
+
+    <LinearLayout
+        android:id="@+id/ll_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/step_one">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineHeight="24sp"
+            android:text="圈子简介"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:drawableRight="@drawable/module_circle_icon_right_gray"
+            android:ellipsize="end"
+            android:lineHeight="24sp"
+            android:singleLine="true"
+            android:text="外汇书聚合物会很骄傲艾斯拿aaaaaaaaaa"
+            android:textColor="@color/gray_three"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_introduction"
+        android:background="@color/gray_three"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <TextView
+    android:id="@+id/tv_user_agreement"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/tv_line"
+    android:text="《用户协议》"
+    android:textColor="@color/global_blue"
+    android:textSize="12sp"
+    android:lineHeight="18sp"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="20dp"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_disband"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请解散该圈子"
+        android:textColor="@color/gray_three"
+        android:textSize="12sp"
+        android:lineHeight="18sp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

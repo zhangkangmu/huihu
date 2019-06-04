@@ -1,0 +1,59 @@
+***************************************************
+*** 用中文书写的说明文件，说明方案待定，并非最终方案 ***
+***************************************************
+
+组件间Activity调用方式:
+    当前采用注入的方式，例如在ModuleA中有A需要调用ModuleB中的B，那么在B中类的上面定义@SimpleRouterRegister(key="B",type="activity")
+    然后ModuleA中的A就能直接根据SimpleRouter.startActivity(B)来启动B了
+
+目前只是考虑了简单的几种调用形式：
+
+-----------------------------------------------------
+1.startActivity
+-----------------------------------------------------
+//带参数的startActivity：
+        Bundle bundle = new Bundle();
+        bundle.putString("string_type","this is string test");
+        bundle.putInt("int_type",1234567890);
+        bundle.putBoolean("bool_type",true);
+        bundle.putFloat("float_type",123.456f);
+        SimpleRouter.getInstance().startActivity("MarketNewsOneActivity",bundle);
+
+//不带参数的startActivity：
+        SimpleRouter.getInstance().startActivity("MarketNewsOneActivity",null);
+
+-----------------------------------------------------
+2.setFragment
+-----------------------------------------------------
+        m_Fragment = SimpleRouter.getInstance().getFragment("LeftFragment");
+
+
+-----------------------------------------------------
+3.模块间直接调用函数
+-----------------------------------------------------
+        A调用B中的method；
+        step 1：在模块B中定义
+            @SimpleRouterClassRegister(key = "TestMethodCall", type = SimpleRouterObj.METHOD)
+        step 2：在模块A中调用，注意耗时运行可在异步、线程里执行
+            String strResult = SimpleRouter.getInstance().doMethod("TestMethodCall", "tryModifyString", "ABCDEF", "1234567890");
+        step 3：在模块B中编写tryModifyString函数：
+            public String tryModifyString(String strOri, String strAppend) {
+
+                Log.e("@@@","RightFuncOp::tryGetAccount:"+strOri+" - "+strAppend);
+
+                SimpleDateFormat formatter = new SimpleDateFormat ("yyyy年MM月dd日 HH:mm:ss");
+                Date curDate = new Date(System.currentTimeMillis());//获取当前时间
+                String strCurTime = formatter.format(curDate);
+
+                String strRet = String.format("[%s]%s_%s",strCurTime, strOri, strAppend);
+
+                Log.e("@@@","RightFuncOp::tryModifyString:"+strRet);
+
+                return strRet;
+            }
+
+*******************************************
+PS：之所以为暂定，当前为了方便，采用了类名遍历处理的方式，
+    如果功能越来越复杂，以上几种形式通过拓展也无法满足，
+    或者出现不稳定情况下，就改用其他的源码实现，例如ARouter、AndroidRouter...
+

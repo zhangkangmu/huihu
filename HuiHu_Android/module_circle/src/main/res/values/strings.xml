@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">module_circle</string>
+    <string name="module_circle_circle">圈子</string>
+    <string name="module_circle_attention">关注TA</string>
+    <string name="module_circle_attentioned">已关注</string>
+    <string name="create_circle">创建圈子</string>
+    <string name="circle_instruction">圈子简介</string>
+    <string name="choose_photo">选择封面</string>
+    <string name="complete">完成</string>
+    <string name="create_successful">恭喜你，创建成功！</string>
+    <string name="your_circle">你的圈子</string>
+    <string name="invite">邀请</string>
+    <string name="manage">管理</string>
+    <string name="join">加入</string>
+    <string name="attentioned">已关注</string>
+</resources>
